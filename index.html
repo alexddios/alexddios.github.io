@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Álex De Dios — Desarrollador DAM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.11.0/dist/tabler-icons.min.css" />
+</head>
+<body>
+
+<div class="dot-bg"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">alex<span class="acc">.deDios</span><span style="color:var(--acc);animation:blink 0.9s step-end infinite">_</span></a>
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre mí</a></li>
+    <li><a href="#habilidades">Habilidades</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#formacion">Formación</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <a href="CurrículumVitae.pdf" class="nav-cta" download>Descargar CV</a>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#sobre" class="mobile-link">Sobre mí</a>
+  <a href="#habilidades" class="mobile-link">Habilidades</a>
+  <a href="#proyectos" class="mobile-link">Proyectos</a>
+  <a href="#formacion" class="mobile-link">Formación</a>
+  <a href="#contacto" class="mobile-link">Contacto</a>
+  <a href="cv-alex-de-dios.pdf" download style="color:var(--acc); font-family:var(--font-mono); font-size:13px">↓ Descargar CV</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">
+        <div class="badge-dot"></div>
+        Disponible para prácticas · 2025
+      </div>
+      <div class="hero-greeting">// Hola, soy <span>Álex De Dios</span></div>
+      <h1 class="hero-name">Álex<br>De Dios</h1>
+      <p class="hero-role">
+        Estudiante DAM &amp; <span class="typewriter" id="typewriter"></span><span class="cursor"></span>
+      </p>
+      <p class="hero-desc">
+        Desarrollador en formación apasionado por Java y las bases de datos. Primer año de DAM terminado, muchas ganas de seguir aprendiendo y de contribuir en un equipo real.
+      </p>
+      <div class="hero-btns">
+        <a href="#proyectos" class="btn-primary">
+          <i class="ti ti-layout-grid"></i> Ver proyectos
+        </a>
+        <a href="https://github.com/Zafiro2004" target="_blank" rel="noopener" class="btn-ghost">
+          <i class="ti ti-brand-github"></i> GitHub
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/Zafiro2004" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="ti ti-brand-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/alex-de-dios-pallicer-ab44a5409/?isSelfProfile=true" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="ti ti-brand-linkedin"></i>
+        </a>
+        <a href="mailto:alexdediospallicer@gmail.com" aria-label="Email">
+          <i class="ti ti-mail"></i>
+        </a>
+        <div class="social-divider"></div>
+        <span style="font-family:var(--font-mono);font-size:11px;color:var(--muted)">España · DAM</span>
+      </div>
+    </div>
+
+    <div class="hero-code" aria-hidden="true">
+      <div class="code-topbar">
+        <div class="code-dot" style="background:#ef4444"></div>
+        <div class="code-dot" style="background:#f59e0b"></div>
+        <div class="code-dot" style="background:#22c55e"></div>
+        <span class="code-filename">Desarrollador.java</span>
+      </div>
+      <div class="code-body">
+        <div><span class="ln">1</span><span class="cm">// Sobre Álex De Dios</span></div>
+        <div><span class="ln">2</span><span class="kw">public class</span> <span class="cls">Desarrollador</span> {</div>
+        <div><span class="ln">3</span></div>
+        <div><span class="ln">4</span>&nbsp;&nbsp;<span class="kw">private</span> String nombre <span class="op">=</span> <span class="str">"Álex De Dios"</span>;</div>
+        <div><span class="ln">5</span>&nbsp;&nbsp;<span class="kw">private</span> String curso <span class="op">=</span> <span class="str">"1º DAM"</span>;</div>
+        <div><span class="ln">6</span>&nbsp;&nbsp;<span class="kw">private</span> String[] skills <span class="op">=</span> {</div>
+        <div><span class="ln">7</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"Java"</span>, <span class="str">"MySQL"</span>, <span class="str">"Git"</span></div>
+        <div><span class="ln">8</span>&nbsp;&nbsp;};</div>
+        <div><span class="ln">9</span>&nbsp;&nbsp;<span class="kw">private boolean</span> disponible <span class="op">=</span> <span class="num">true</span>;</div>
+        <div><span class="ln">10</span></div>
+        <div><span class="ln">11</span>&nbsp;&nbsp;<span class="kw">public</span> String <span class="fn">getObjetivo</span>() {</div>
+        <div><span class="ln">12</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> <span class="str">"Prácticas DAM 2025"</span>;</div>
+        <div><span class="ln">13</span>&nbsp;&nbsp;}</div>
+        <div><span class="ln">14</span>}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE MÍ -->
+<section id="sobre">
+  <div class="reveal">
+    <div class="section-label">Sobre mí</div>
+    <h2 class="section-title">Quién soy y <span class="hl">por qué programo</span></h2>
+  </div>
+
+  <div class="about-grid reveal">
+    <div class="about-text">
+      <p>
+        Hola, soy <span class="hl">Álex De Dios</span>, estudiante de primer año del Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma. Elegí DAM porque desde pequeño me ha gustado entender cómo funcionan las cosas por dentro, y el software me pareció el reto perfecto.
+      </p>
+      <p>
+        Este primer año ha sido intenso: aprender a pensar en objetos con Java, diseñar bases de datos desde cero, entender por qué Git existe (y agradecerlo mucho), y darme cuenta de que la programación tiene mucho más que código. Me ha gustado especialmente todo lo relacionado con <span class="hl">bases de datos</span> y la <span class="hl">programación orientada a objetos</span>.
+      </p>
+      <p>
+        Busco unas prácticas donde poder aprender de profesionales con experiencia, contribuir en proyectos reales aunque sea en tareas pequeñas, y seguir creciendo como desarrollador. No tengo todo el camino claro, pero sí tengo muchas ganas.
+      </p>
+
+      <div class="about-info">
+        <div class="info-row">
+          <span class="info-key">ubicación</span>
+          <span class="info-val">España</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">estudios</span>
+          <span class="info-val">CFGS DAM · 1er curso finalizado</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">email</span>
+          <span class="info-val"><a href="mailto:alexdediospallicer@gmail.com">alexdediospallicer@gmail.com</a></span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">estado</span>
+          <span class="info-val" style="color:var(--acc3)">● Disponible para prácticas</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-num" style="color:var(--acc)">4+</div>
+          <div class="stat-label">Proyectos completados</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" style="color:var(--acc2)">7</div>
+          <div class="stat-label">Módulos cursados</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" style="color:var(--acc3)">0</div>
+          <div class="stat-label">Años de experiencia</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" style="color:var(--acc4)">+50</div>
+          <div class="stat-label">Commits en GitHub</div>
+        </div>
+        <div class="learning-now">
+          <div class="learning-title">
+            <i class="ti ti-book-2" style="font-size:13px"></i>
+            Aprendiendo ahora mismo
+          </div>
+          <div class="learning-tags">
+            <span class="ltag">JavaFX</span>
+            <span class="ltag">CSS responsive</span>
+            <span class="ltag">JDBC avanzado</span>
+            <span class="ltag">Git branching</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HABILIDADES -->
+<section id="habilidades">
+  <div class="reveal">
+    <div class="section-label">Habilidades</div>
+    <h2 class="section-title">Tecnologías que <span class="hl">manejo y aprendo</span></h2>
+    <p style="font-size:13.5px;color:var(--muted);margin-top:0.5rem;font-family:var(--font-mono)">// Los niveles son honestos. Todavía estoy aprendiendo.</p>
+  </div>
+
+  <div class="skills-grid reveal">
+    <div class="skill-group">
+      <div class="skill-group-label">
+        <div class="dot-acc" style="background:var(--acc)"></div>
+        Lenguajes
+      </div>
+      <div class="skill-item">
+        <div class="skill-row">
+          <span class="skill-name">Java SE</span>
+          <span class="skill-level">manejando bien</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:65%;background:var(--acc)"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-row">
+          <span class="skill-name">SQL</span>
+          <span class="skill-level">manejando bien</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:60%;background:var(--acc)"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-row">
+          <span class="skill-name">HTML5 / CSS3</span>
+          <span class="skill-level">básico</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:40%;background:var(--acc)"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-row">
+          <span class="skill-name">JavaScript</span>
+          <span class="skill-level">iniciando</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:25%;background:var(--acc)"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-label">
+        <div class="dot-acc" style="background:var(--acc2)"></div>
+        Bases de datos
+      </div>
+      <div class="skill-item">
+        <div class="skill-row">
+          <span class="skill-name">MySQL</span>
+          <span class="skill-level">manejando bien</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:62%;background:var(--acc2)"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-row">
+          <span class="skill-name">Oracle</span>
+          <span class="skill-level">manejando bien</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:60%;background:var(--acc2)"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-row">
+          <span class="skill-name">Diseño ER</span>
+          <span class="skill-level">manejando bien</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:58%;background:var(--acc2)"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-row">
+          <span class="skill-name">JDBC</span>
+          <span class="skill-level">básico</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:35%;background:var(--acc2)"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-label">
+        <div class="dot-acc" style="background:var(--acc3)"></div>
+        Herramientas
+      </div>
+      <div class="skill-item">
+        <div class="skill-row">
+          <span class="skill-name">Git</span>
+          <span class="skill-level">básico-medio</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:45%;background:var(--acc3)"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-row">
+          <span class="skill-name">IntelliJ IDEA</span>
+          <span class="skill-level">manejando bien</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:60%;background:var(--acc3)"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-row">
+          <span class="skill-name">DataGrip</span>
+          <span class="skill-level">manejando bien</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:55%;background:var(--acc3)"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-row">
+          <span class="skill-name">VS Code</span>
+          <span class="skill-level">básico</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="width:38%;background:var(--acc3)"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tools-grid reveal">
+    <div class="tool-chip"><i class="ti ti-brand-git" style="color:var(--acc4)"></i>Git / GitHub</div>
+    <div class="tool-chip"><i class="ti ti-file-code" style="color:var(--acc2)">​</i>XML · XSD</div>
+    <div class="tool-chip"><i class="ti ti-terminal" style="color:var(--acc3)"></i>Terminal Linux</div>
+    <div class="tool-chip"><i class="ti ti-database" style="color:var(--acc2)"></i>DataGrip</div>
+    <div class="tool-chip"><i class="ti ti-brand-java" style="color:var(--acc)"></i>POO · Colecciones</div>
+    <div class="tool-chip"><i class="ti ti-file-type-html" style="color:var(--acc4)"></i>HTML5 semántico</div>
+    <div class="tool-chip"><i class="ti ti-chart-dots" style="color:var(--acc3)"></i>Diseño ER</div>
+    <div class="tool-chip"><i class="ti ti-file-type-json" style="color:var(--acc)"></i>JSON básico</div>
+  </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos">
+  <div class="reveal">
+    <div class="section-label">Proyectos</div>
+    <h2 class="section-title">Lo que he <span class="hl">construido hasta ahora</span></h2>
+    <p style="font-size:13.5px;color:var(--muted);margin-top:0.5rem;font-family:var(--font-mono)">// Proyectos académicos de 1º DAM. Pequeños pero bien documentados.</p>
+  </div>
+
+  <div class="projects-grid reveal">
+
+    <!-- Proyecto 1 -->
+    <article class="project-card">
+      <div class="project-preview" style="background:linear-gradient(135deg,#1e293b,#0f172a)">
+        <i class="ti ti-book-2" style="font-size:3rem;color:var(--acc);position:relative;z-index:1"></i>
+      </div>
+      <div class="project-body">
+        <div class="project-header">
+          <span class="project-name">Gestión de Biblioteca</span>
+          <div class="project-links">
+            <a href="404.html" target="_blank" rel="noopener" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
+          </div>
+        </div>
+        <div class="project-type">Proyecto académico · Java · Consola</div>
+        <p class="project-desc">Aplicación de consola en Java para gestionar libros, usuarios y préstamos. CRUD completo implementado con POO, herencia (Libro y Revista extienden Publicacion) y persistencia en ficheros de texto.</p>
+        <p class="project-learned">"Aprendí cómo la herencia hace el código mucho más organizado, y lo importante que es separar responsabilidades desde el principio."</p>
+        <div class="project-tags">
+          <span class="ptag" style="background:rgba(56,189,248,0.1);color:var(--acc)">Java SE</span>
+          <span class="ptag" style="background:rgba(56,189,248,0.1);color:var(--acc)">POO</span>
+          <span class="ptag" style="background:rgba(56,189,248,0.1);color:var(--acc)">Herencia</span>
+          <span class="ptag" style="background:rgba(56,189,248,0.1);color:var(--acc)">Ficheros</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Proyecto 2 -->
+    <article class="project-card">
+      <div class="project-preview" style="background:linear-gradient(135deg,#1e1b4b,#0f172a)">
+        <i class="ti ti-database" style="font-size:3rem;color:var(--acc2);position:relative;z-index:1"></i>
+      </div>
+      <div class="project-body">
+        <div class="project-header">
+          <span class="project-name">BD Tienda Online</span>
+          <div class="project-links">
+            <a href="404.html" target="_blank" rel="noopener" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
+          </div>
+        </div>
+        <div class="project-type">Proyecto académico · MySQL · Bases de datos</div>
+        <p class="project-desc">Diseño completo de base de datos relacional para una tienda online. Modelo ER, implementación en MySQL con DDL, consultas DML complejas, vistas y procedimientos almacenados básicos. Documentado con diagramas.</p>
+        <p class="project-learned">"Entendí que diseñar bien la base de datos al principio ahorra muchísimos problemas después. Las claves foráneas son tus amigas."</p>
+        <div class="project-tags">
+          <span class="ptag" style="background:rgba(129,140,248,0.1);color:var(--acc2)">MySQL</span>
+          <span class="ptag" style="background:rgba(129,140,248,0.1);color:var(--acc2)">SQL DDL/DML</span>
+          <span class="ptag" style="background:rgba(129,140,248,0.1);color:var(--acc2)">Diseño ER</span>
+          <span class="ptag" style="background:rgba(129,140,248,0.1);color:var(--acc2)">Vistas</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Proyecto 3 -->
+    <article class="project-card">
+      <div class="project-preview" style="background:linear-gradient(135deg,#064e3b,#0f172a)">
+        <i class="ti ti-movie" style="font-size:3rem;color:var(--acc3);position:relative;z-index:1"></i>
+      </div>
+      <div class="project-body">
+        <div class="project-header">
+          <span class="project-name">Catálogo de Películas</span>
+          <div class="project-links">
+            <a href="404.html" target="_blank" rel="noopener" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
+          </div>
+        </div>
+        <div class="project-type">Proyecto personal · Java + SQLite · JDBC</div>
+        <p class="project-desc">Aplicación Java que se conecta a una base de datos SQLite mediante JDBC. Permite añadir, buscar y filtrar películas por género o año. Primer proyecto donde separé la lógica de datos de la lógica de negocio.</p>
+        <p class="project-learned">"Mi primer contacto real con JDBC. Me costó configurar la conexión, pero cuando funcionó fue muy satisfactorio. Aprendí que siempre hay que cerrar los recursos."</p>
+        <div class="project-tags">
+          <span class="ptag" style="background:rgba(52,211,153,0.1);color:var(--acc3)">Java SE</span>
+          <span class="ptag" style="background:rgba(52,211,153,0.1);color:var(--acc3)">SQLite</span>
+          <span class="ptag" style="background:rgba(52,211,153,0.1);color:var(--acc3)">JDBC</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Proyecto 4 -->
+    <article class="project-card">
+      <div class="project-preview" style="background:linear-gradient(135deg,#431407,#0f172a)">
+        <i class="ti ti-file-type-xml" style="font-size:3rem;color:var(--acc4);position:relative;z-index:1"></i>
+      </div>
+      <div class="project-body">
+        <div class="project-header">
+          <span class="project-name">Gestión XML de Empleados</span>
+          <div class="project-links">
+            <a href="404.html" target="_blank" rel="noopener" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
+          </div>
+        </div>
+        <div class="project-type">Proyecto académico · XML · LMSGI</div>
+        <p class="project-desc">Documentos XML bien estructurados para gestionar datos de empleados de una empresa. Incluye esquema XSD para validación, transformación XSL a HTML y navegación básica entre registros.</p>
+        <p class="project-learned">"Aprendí que los datos estructurados son la base de casi todo. XML me pareció verboso al principio, pero entender XSD fue un click importante."</p>
+        <div class="project-tags">
+          <span class="ptag" style="background:rgba(251,146,60,0.1);color:var(--acc4)">XML</span>
+          <span class="ptag" style="background:rgba(251,146,60,0.1);color:var(--acc4)">XSD</span>
+          <span class="ptag" style="background:rgba(251,146,60,0.1);color:var(--acc4)">XSL</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- FORMACIÓN -->
+<section id="formacion">
+  <div class="reveal">
+    <div class="section-label">Formación</div>
+    <h2 class="section-title">Dónde y qué <span class="hl">estoy aprendiendo</span></h2>
+  </div>
+
+  <div class="edu-card reveal">
+    <div>
+      <div class="edu-school">CFGS · Desarrollo de Aplicaciones Multiplataforma</div>
+      <div class="edu-title">Técnico Superior en DAM</div>
+      <p style="font-size:13.5px;color:var(--muted2);margin-top:8px;line-height:1.7;max-width:500px">
+        Ciclo formativo de grado superior orientado al diseño y desarrollo de aplicaciones informáticas multiplataforma. Actualmente cursando el segundo año.
+      </p>
+      <div class="modulos-grid" style="margin-top:1.5rem">
+        <div class="modulo"><div class="dot-m" style="background:var(--acc)"></div>Programación (Java)</div>
+        <div class="modulo"><div class="dot-m" style="background:var(--acc2)"></div>Bases de datos</div>
+        <div class="modulo"><div class="dot-m" style="background:var(--acc3)"></div>Entornos de desarrollo</div>
+        <div class="modulo"><div class="dot-m" style="background:var(--acc4)"></div>Lenguajes de marcas</div>
+        <div class="modulo"><div class="dot-m" style="background:var(--acc)"></div>Sistemas informáticos</div>
+        <div class="modulo"><div class="dot-m" style="background:var(--acc2)"></div>FOL</div>
+      </div>
+    </div>
+    <div>
+      <div class="edu-period">2024 → 2026</div>
+    </div>
+  </div>
+
+  <div class="reveal" style="margin-top:2rem">
+    <div class="section-label">Formación complementaria</div>
+    <div class="courses-grid">
+      <div class="course-card">
+        <div class="course-icon" style="background:rgba(56,189,248,0.1)">
+          <i class="ti ti-brand-java" style="color:var(--acc)"></i>
+        </div>
+        <div>
+          <div class="course-name">Java Completo — Udemy</div>
+          <div class="course-platform">// Aprendizaje autónomo</div>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-icon" style="background:rgba(129,140,248,0.1)">
+          <i class="ti ti-database" style="color:var(--acc2)"></i>
+        </div>
+        <div>
+          <div class="course-name">SQL para principiantes — YouTube</div>
+          <div class="course-platform">// Aprendizaje autónomo</div>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-icon" style="background:rgba(52,211,153,0.1)">
+          <i class="ti ti-brand-git" style="color:var(--acc3)"></i>
+        </div>
+        <div>
+          <div class="course-name">Git para todos — freeCodeCamp</div>
+          <div class="course-platform">// Aprendizaje autónomo</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="reveal">
+    <div class="section-label">Contacto</div>
+    <h2 class="section-title">¿Hablamos sobre <span class="hl">prácticas o proyectos</span>?</h2>
+  </div>
+
+  <div class="contact-wrapper reveal">
+    <div>
+      <p class="contact-desc">
+        Estoy buscando prácticas para el curso 2025–2026 donde aprender de profesionales con experiencia. Si tienes alguna oportunidad o simplemente quieres conectar, estaré encantado de escucharte.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:alexdediospallicer@gmail.com" class="contact-link">
+          <span class="contact-link-icon"><i class="ti ti-mail"></i></span>
+          <span class="contact-link-text">
+            <span class="contact-link-label">// email</span>
+            <span class="contact-link-val">alexdediospallicer@gmail.com</span>
+          </span>
+          <i class="ti ti-arrow-right contact-link-arrow"></i>
+        </a>
+        <a href="https://github.com/Zafiro2004" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-link-icon"><i class="ti ti-brand-github"></i></span>
+          <span class="contact-link-text">
+            <span class="contact-link-label">// github</span>
+            <span class="contact-link-val">github.com/Zafiro2004</span>
+          </span>
+          <i class="ti ti-arrow-right contact-link-arrow"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/alex-de-dios-pallicer-ab44a5409/?isSelfProfile=true" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-link-icon"><i class="ti ti-brand-linkedin"></i></span>
+          <span class="contact-link-text">
+            <span class="contact-link-label">// linkedin</span>
+            <span class="contact-link-val">linkedin.com/in/alexdediospallicer</span>
+          </span>
+          <i class="ti ti-arrow-right contact-link-arrow"></i>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label class="form-label" for="nombre">// nombre</label>
+          <input class="form-input" type="text" id="nombre" placeholder="Tu nombre" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">// email</label>
+          <input class="form-input" type="email" id="email" placeholder="tu@email.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="mensaje">// mensaje</label>
+          <textarea class="form-textarea" id="mensaje" placeholder="¿En qué puedo ayudarte o cuéntame sobre la oportunidad..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit" id="submit-btn">
+          <i class="ti ti-send"></i> Enviar mensaje
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">
+    <div style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px">Álex De Dios</div>
+    <div>© 2025 · Diseñado y desarrollado con <span>HTML, CSS y JS</span> puro.</div>
+    <div style="margin-top:2px">Estudiante de DAM · España</div>
+  </div>
+  <div class="footer-socials">
+    <a href="https://github.com/Zafiro2004" target="_blank" rel="noopener" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
+    <a href="https://www.linkedin.com/in/alex-de-dios-pallicer-ab44a5409/?isSelfProfile=true" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
+    <a href="mailto:alexdediospallicer@gmail.com" aria-label="Email"><i class="ti ti-mail"></i></a>
+  </div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
