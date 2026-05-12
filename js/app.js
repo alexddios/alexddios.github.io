@@ -1,5 +1,5 @@
 /* ── Typewriter ── */
-const roles = ["Programador Java", "Estudiante DAM", "Amante del SQL", "Desarrollador en formación"];
+const roles = ["Programador Java", "Amante del SQL", "Desarrollador en formación"];
 let ri = 0, ci = 0, deleting = false;
 const tw = document.getElementById('typewriter');
 function type() {
