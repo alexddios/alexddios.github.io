@@ -519,18 +519,18 @@
     </div>
 
     <div>
-      <form class="contact-form" onsubmit="handleSubmit(event)">
+       <form class="contact-form" action="https://formspree.io/f/maqvrvre" method="POST" onsubmit="handleSubmit(event)">
         <div class="form-group">
           <label class="form-label" for="nombre">// nombre</label>
-          <input class="form-input" type="text" id="nombre" placeholder="Tu nombre" required />
+          <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
         </div>
         <div class="form-group">
           <label class="form-label" for="email">// email</label>
-          <input class="form-input" type="email" id="email" placeholder="tu@email.com" required />
+          <input class="form-input" type="email" id="email" name="email" placeholder="tu@email.com" required />
         </div>
         <div class="form-group">
           <label class="form-label" for="mensaje">// mensaje</label>
-          <textarea class="form-textarea" id="mensaje" placeholder="¿En qué puedo ayudarte o cuéntame sobre la oportunidad..." required></textarea>
+          <textarea class="form-textarea" id="mensaje" name="mensaje" placeholder="¿En qué puedo ayudarte o cuéntame sobre la oportunidad..." required></textarea>
         </div>
         <button type="submit" class="form-submit" id="submit-btn">
           <i class="ti ti-send"></i> Enviar mensaje
